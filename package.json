@@ -10,14 +10,14 @@
     "Other"
   ],
   "activationEvents": [
-    "onCommand:extension.helloWorld"
+    "onCommand:Gitignore.generate"
   ],
   "main": "./extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
+        "command": "Gitignore.generate",
+        "title": "Generate .gitignore"
       }
     ]
   },
