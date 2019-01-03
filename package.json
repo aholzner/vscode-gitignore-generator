@@ -1,6 +1,7 @@
 {
   "name": "gitignore-generator",
   "author": "Ahmed Sonnenholzner",
+  "publisher": "Ahmed Sonnenholzner",
   "license": "MIT",
   "displayName": "vscode-gitignore-generator",
   "description": "Generates a .gitignore file",
