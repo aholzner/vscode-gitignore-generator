@@ -19,7 +19,16 @@
         "command": "Gitignore.generate",
         "title": "Generate .gitignore"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "Gitignore.generate",
+          "when": "explorerResourceIsFolder",
+          "group": "Gitignore@1"
+        }
+      ]
+    }
   },
   "scripts": {
     "postinstall": "node ./node_modules/vscode/bin/install",

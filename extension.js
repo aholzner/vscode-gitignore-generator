@@ -26,15 +26,13 @@ function activate(context) {
     function() {
       const currentPath = vscode.workspace.workspaceFolders[0].uri.fsPath;
       // The code you place here will be executed every time your command is executed
-
-      // Display a message box to the user
-      vscode.window.showWarningMessage(currentPath);
+      
       fs.appendFile(path.join(currentPath, '.gitignore'), ignoredData, function(
         err,
         data,
       ) {
-        if (err) return vscode.window.showErrorMessage(currentPath);
-        vscode.window.showInformationMessage(currentPath);
+        if (err) return vscode.window.showErrorMessage(err);
+        vscode.window.showInformationMessage('.gitignore file has been generated.');
       });
     },
   );
