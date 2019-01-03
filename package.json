@@ -3,7 +3,7 @@
   "author": "Ahmed Sonnenholzner",
   "publisher": "asonnenholzner",
   "license": "MIT",
-  "displayName": "vscode-gitignore-generator",
+  "displayName": "gitignore-generator",
   "description": "Generates a .gitignore file",
   "version": "0.0.1",
   "engines": {
