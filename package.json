@@ -3,7 +3,7 @@
   "author": "Ahmed Sonnenholzner",
   "publisher": "asonnenholzner",
   "license": "MIT",
-  "displayName": "gitignore-generator",
+  "displayName": ".gitignore Generator",
   "description": "Generates a .gitignore file",
   "version": "0.1.0",
   "engines": {
