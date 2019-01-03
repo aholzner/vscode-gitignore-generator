@@ -1,7 +1,3 @@
-# gitignore-generator README
-
-This is the README for your extension "gitignore-generator". After writing up a brief description, we recommend including the following sections.
-
 ## Features
 
 Generated a .gitignore me file including the following:
