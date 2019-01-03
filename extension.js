@@ -3,7 +3,7 @@
 const vscode = require('vscode');
 const fs = require('fs');
 const path = require('path');
-const ignoredData = 'node_modules \n*.env \n.env* \n*.local';
+const ignoredData = '\nnode_modules \n*.env \n.env* \n*.local';
 
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
