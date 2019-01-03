@@ -14,9 +14,7 @@ const ignoredData = 'node_modules \n*.env \n.env* \n*.local';
 function activate(context) {
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-  console.log(
-    'Congratulations, your extension "gitignore-generator" is now active!',
-  );
+  console.log('Congratulations, your extension "gitignore-generator" is now active!');
 
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with  registerCommand
@@ -26,18 +24,12 @@ function activate(context) {
     function() {
       const currentPath = vscode.workspace.workspaceFolders[0].uri.fsPath;
       // The code you place here will be executed every time your command is executed
-
-      // Display a message box to the user
-      vscode.window.showWarningMessage(currentPath);
-      fs.appendFile(path.join(currentPath, '.gitignore'), ignoredData, function(
-        err,
-        data,
-      ) {
-        if (err) return vscode.window.showErrorMessage(currentPath);
-        vscode.window.showInformationMessage(currentPath);
+      
+      fs.appendFile(path.join(currentPath, '.gitignore'), ignoredData, function(err,data) {
+        if (err) return vscode.window.showErrorMessage(err);
+        vscode.window.showInformationMessage('.gitignore file has been generated.');
       });
-    },
-  );
+    });
 
   context.subscriptions.push(disposable);
 }
