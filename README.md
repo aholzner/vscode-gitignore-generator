@@ -1,6 +1,6 @@
 ## Features
 
-Generated a .gitignore me file including the following:
+Generates a .gitignore me file including the following:
 node_modules
 *.env
 *.local
